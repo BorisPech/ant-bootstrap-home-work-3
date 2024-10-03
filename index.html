@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 03 - Boris</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container d-flex-js-co-between">
+                <div class="head-logo">
+                    <h1>Logo</h1>
+                </div>
+                <div class="head-title">
+                    <h2>Book Store</h2>
+                </div>
+                <div class="head-social-media">
+                    <ul class="social">
+                        <li class="social-item">
+                            <a class="social-link" href="#"><img src="image/logo-facebook.png" alt=""></a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="#"><img src="image/telegram-app.png" alt=""></a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="#"><img src="image/instagram.png" alt=""></a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="#"><img src="image/switter.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#"><i class="fa-regular fa-user"></i>My Profile</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#"><i class="fa-solid fa-gear"></i>Setting</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#">Lenguage <span><i
+                                        class="fa-solid fa-angle-right"></i></span></a>
+                            <div class="sub-dropdown">
+                                <ul class="sub-dropdown-menu">
+                                    <li class="sub-drop-item">
+                                        <a class="sub-drop-link" href="#">Khmer</a>
+                                    </li>
+                                    <li class="sub-drop-item">
+                                        <a class="sub-drop-link" href="#">English</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero-banner">
+        <div class="container">
+            <div class="row">
+                <aside class="col-3">
+                    <div class="overlay">
+                        <div class="card">
+                            <div class="title">
+                                <h1>សៀវភៅភាសាខ្មែរ</h1>
+                            </div>
+                            <ul class="type-book">
+                                <li class="book-list">
+                                    <a class="book-link" href="#">ប្រលោមលោក</a>
+                                </li>
+                                <li class="book-list">
+                                    <a class="book-link" href="#">ប្រវត្តិសាស្រ្ត</a>
+                                </li>
+                                <li class="book-list">
+                                    <a class="book-link" href="#">វចនានុក្រម</a>
+                                </li>
+                            </ul>
+
+                            <div class="title">
+                                <h1>សៀវភៅភាសាបរទេស</h1>
+                            </div>
+                            <ul class="type-book">
+                                <li class="book-list">
+                                    <a class="book-link" href="#">កូរ៉េ</a>
+                                </li>
+                                <li class="book-list">
+                                    <a class="book-link" href="#">ថៃ</a>
+                                </li>
+                                <li class="book-list">
+                                    <a class="book-link" href="#">អង់គ្លេស</a>
+                                </li>
+                            </ul>
+
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="image/book-1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="image/book-2.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="image/book-3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="image/book-4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="image/book-5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="image/book-6.jpg" alt=""></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+
+                            <div class="contact">
+                                <div class="title">
+                                    <h1>Contact</h1>
+                                </div>
+                                <ul class="contact-list">
+                                    <li class="con-list">
+                                        <a class="con-link" href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                                    </li>
+                                    <li class="con-list">
+                                        <a class="con-link" href="#"><i class="fa-solid fa-envelope"></i>Email</a>
+                                    </li>
+                                    <li class="con-list">
+                                        <a class="con-link" href="#"><i class="fa-brands fa-telegram"></i>Telegram</a>
+                                    </li>
+                                    <li class="con-list">
+                                        <a class="con-link" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="login">
+                                <div class="title">
+                                    <h1>Login</h1>
+                                </div>
+
+                                <form class="row-gap" action="#">
+                                    <div class="form">
+                                        <label for="email">Email</label><br>
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="form">
+                                        <label for="password">Password</label><br>
+                                        <input type="password" name="password" id="password" placeholder="Password"
+                                            required>
+                                    </div>
+                                    <div class="btn-login">
+                                        <input type="submit" value="Login">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="col-9">
+                    <div class="title">
+                        <h1>Khmer Book</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-1.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>អំពីរអង្គរ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-2.png" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>វេយ្យករណ៌និងពាក្យខ្មែរ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-3.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>ព្រះគម្ពីរ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ma-top">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-4.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>អាគ្រក់ឬអាមិល</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ma-top">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-5.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>ជ័យប្រាជ្ញ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ma-top">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-6.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>គ្រុឌ</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title ma-top">
+                        <h1>English Book</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-1.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>អំពីរអង្គរ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-2.png" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>វេយ្យករណ៌និងពាក្យខ្មែរ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-3.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>ព្រះគម្ពីរ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ma-top">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-4.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>អាគ្រក់ឬអាមិល</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ma-top">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-5.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>ជ័យប្រាជ្ញ</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ma-top">
+                            <div class="card">
+                                <div class="img-book">
+                                    <img src="image/book-6.jpg" alt="">
+                                </div>
+                                <ul class="other-btn">
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-download"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-link"></i></a>
+                                    </li>
+                                    <li class="btn-item">
+                                        <a class="btn-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="about">
+                                    <h1>គ្រុឌ</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.450395031151!2d104.92400380938875!3d11.576673156826018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095144cbdbf311%3A0x2588e1ac1787eb64!2sWat%20Phnom%20Daun%20Penh!5e0!3m2!1sen!2skh!4v1727929634849!5m2!1sen!2skh"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 padd-right">
+                    <div class="title">
+                        <h1>Foolish Developer</h1>
+                    </div>
+                    <p>Foolish Developer
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatem corporis error non,Ex
+                        hic maxime sapiente
+                        mollitia labore pariatur aut optio assumenda quae, porro sit. Vitae assumenda
+                    </p>
+                    <ul class="contact">
+                        <li class="con-list">
+                            <a class="con-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="con-list">
+                            <a class="con-link" href="#"><i class="fa-brands fa-telegram"></i></a>
+                        </li>
+                        <li class="con-list">
+                            <a class="con-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="con-list">
+                            <a class="con-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="con-list">
+                            <a class="con-link" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li class="con-list">
+                            <a class="con-link" href="#"><i class="fa-solid fa-message"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="title">
+                        <h1>Some Links</h1>
+                    </div>
+                    <ul class="other-link">
+                        <li class="list">
+                            <a class="oth-link" href="#">F.A.Q</a>
+                        </li>
+                        <li class="list">
+                            <a class="oth-link" href="#">Cookies Policy</a>
+                        </li>
+                        <li class="list">
+                            <a class="oth-link" href="#">Terms of Service</a>
+                        </li>
+                        <li class="list">
+                            <a class="oth-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="title">
+                        <h1>Some Links</h1>
+                    </div>
+                    <ul class="other-link">
+                        <li class="list">
+                            <a class="oth-link" href="#">F.A.Q</a>
+                        </li>
+                        <li class="list">
+                            <a class="oth-link" href="#">Cookies Policy</a>
+                        </li>
+                        <li class="list">
+                            <a class="oth-link" href="#">Terms of Service</a>
+                        </li>
+                        <li class="list">
+                            <a class="oth-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="title">
+                        <h1>Newsletter</h1>
+                    </div>
+                    <form action="#">
+                        <div class="form">
+                            <input class="input" type="email" id="email" name="email" placeholder="Your ID Email Here" required>
+                        </div>
+                        <button class="btn-submit" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

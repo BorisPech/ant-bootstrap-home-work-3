@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+/* ====== header ====== */
+.header {
+  display: flex;
+  background-color: #dcdcdc;
+}
+
+.header .head-logo, .head-social-media {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.header .head-logo h1 {
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 0 0 5px;
+  border-left: 2px solid #ff0000;
+  background: linear-gradient(to right, #d39403, #014291);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.header .head-title h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #014291;
+  margin: 30px 0;
+}
+
+.header .d-flex-js-co-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .head-social-media .social {
+  list-style-type: none;
+  display: flex;
+  gap: 6px;
+}
+
+.header .head-social-media .social .social-item .social-link img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ===== navbar ====== */
+.navbar {
+  height: 80px;
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+  background-color: #4697e2e3;
+  backdrop-filter: blur(4px);
+}
+
+.navbar .nav-navbar {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.navbar .nav-navbar .nav-item, .dropdown-item {
+  position: relative;
+}
+
+.navbar .nav-navbar .nav-item .nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 0.3s ease-in-out all;
+}
+
+.navbar .nav-navbar .nav-item .nav-link:hover {
+  color: #d7c907;
+}
+
+/* ====== dropdown ====== */
+.dropdown {
+  z-index: 9999;
+  position: absolute;
+  left: -75px;
+  top: 38px;
+  width: 180px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  background-color: #014291a5;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out all;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 34px;
+}
+
+.dropdown .dropdown-menu, .sub-dropdown-menu, .type-book, .contact-list, .other-btn {
+  list-style-type: none;
+}
+
+.dropdown .dropdown-menu .dropdown-item .dropdown-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 6px 0 8px 12px;
+  display: inline-block;
+  transition: 0.3s ease-in-out all;
+}
+
+.dropdown .dropdown-menu .dropdown-item .dropdown-link:hover {
+  color: #d7c907;
+}
+
+.dropdown .dropdown-menu .dropdown-item .dropdown-link i {
+  margin-right: 4px;
+}
+
+.dropdown .dropdown-menu .dropdown-item .dropdown-link span {
+  margin-left: 50px;
+}
+
+/* ====== sub-dropdown ====== */
+.sub-dropdown {
+  z-index: 9999;
+  position: absolute;
+  left: 100%;
+  top: 4px;
+  width: 150px;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #014291a5;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out all;
+}
+
+.dropdown-item:hover .sub-dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+.sub-dropdown .sub-dropdown-menu .sub-drop-item .sub-drop-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 4px;
+  display: inline-block;
+}
+
+.sub-dropdown .sub-dropdown-menu .sub-drop-item .sub-drop-link:hover {
+  color: #d7c907;
+}
+
+/* ====== section hero-banner ====== */
+.hero-banner {
+  padding-top: 30px;
+}
+
+.hero-banner .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-banner .row .col-3 {
+  width: 300px;
+  height: 1655px;
+  border-radius: 6px;
+  background-image: url("../image/col-3-bg.jpg");
+}
+
+.hero-banner .row .col-3 .overlay {
+  width: 300px;
+  height: 1655px;
+  padding: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  background-color: #00000049;
+}
+
+.hero-banner .row .col-3 .card .title h1 {
+  font-family: "Kantumruy Pro", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.hero-banner .row .col-3 .card .type-book {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  margin-bottom: 20px;
+}
+
+.hero-banner .row .col-3 .card .type-book .book-list .book-link {
+  font-family: "Kantumruy Pro", sans-serif;
+  text-decoration: none;
+  width: 280px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 14px 10px;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #6987aca3;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 280px;
+  height: 450px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.hero-banner .row .col-3 .card .contact {
+  margin: 30px 0;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #6987aca3;
+}
+
+.hero-banner .row .col-3 .card .contact .title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-banner .row .col-3 .card .contact .contact-list .con-list .con-link {
+  width: 100%;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 6px;
+  display: inline-block;
+  border: 2px solid #ff000000;
+  transition: 0.3s ease-in-out all;
+}
+
+.hero-banner .row .col-3 .card .contact .contact-list .con-list .con-link:hover {
+  border-bottom: 2px solid #d7c907;
+}
+
+.hero-banner .row .col-3 .card .contact .contact-list .con-list .con-link i {
+  margin-right: 8px;
+  color: #d7c907;
+}
+
+.hero-banner .row .col-3 .card .login {
+  background-color: #6987aca3;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.hero-banner .row .col-3 .card .login .title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-banner .row .col-3 .card .login .row-gap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.hero-banner .row .col-3 .card .login .form label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero-banner .row .col-3 .card .login .form input {
+  width: 260px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 0 8px 10px;
+  margin-top: 6px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.hero-banner .row .col-3 .card .login .btn-login input {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding: 6px 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #d7c907;
+}
+
+.hero-banner .row .col-9 {
+  width: 850px;
+}
+
+.hero-banner .row .col-9 .title h1 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.ma-top {
+  margin-top: 12px;
+}
+
+.hero-banner .row .col-9 .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-banner .row .col-9 .row .col {
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hero-banner .row .col-9 .row .col .card {
+  width: 272px;
+  height: 385px;
+  position: relative;
+}
+
+.hero-banner .row .col-9 .row .col .card:hover .other-btn {
+  top: 25px;
+  right: -1px;
+}
+
+.hero-banner .row .col-9 .row .col .card:hover .about {
+  bottom: 0;
+}
+
+.hero-banner .row .col-9 .row .col .card .img-book img {
+  width: 272px;
+  height: 385px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero-banner .row .col-9 .row .col .card  .other-btn {
+  z-index: 99;
+  position: absolute;
+  top: 25px;
+  right: -56px;
+  padding: 30px 12px;
+  border-radius: 6px 0 0 6px;
+  background-color: #39424f86;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease-in-out all;
+}
+
+.hero-banner .row .col-9 .row .col .card  .other-btn .btn-item {
+  margin: 12px 0;
+}
+
+.hero-banner .row .col-9 .row .col .card  .other-btn .btn-item .btn-link {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.hero-banner .row .col-9 .row .col .card  .about {
+  z-index: 99;
+  position: absolute;
+  bottom: -58px;
+  width: 272px;
+  background-color: #39424f86;
+  border-radius: 0 0 6px 6px;
+  padding: 16px 0;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease-in-out all;
+}
+
+.hero-banner .row .col-9 .row .col .card  .about h1 {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.map {
+  margin-top: 60px;
+}
+
+.map iframe {
+  border-radius: 6px;
+}
+
+.footer {
+  padding: 80px 0 40px 0;
+  background-color: #171717;
+}
+
+.footer .row {
+  display: flex;
+}
+
+.footer .row .col-4 {
+  width: 400px;
+}
+
+.footer .row .title h1 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff; 
+  margin-bottom: 40px;
+}
+
+.footer .row .col-4 p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  word-spacing: 2px;
+  text-align: justify;
+  color: #808080;
+}
+
+.padd-right {
+  padding-right: 30px;
+}
+
+.footer .row .col-4 .contact {
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline-flex;
+  gap: 25px;
+}
+
+.footer .row .col-4 .contact .con-list .con-link {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.footer .row .col-2 {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.footer .row .col-2 .other-link {
+  list-style-type: none;
+}
+
+.footer .row .col-2 .other-link .list .oth-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.footer .row .col-4 .form .input {
+  font-size: 18px;
+  font-weight: 400;
+  width: 400px;
+  padding: 14px 0 14px 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.footer .row .col-4 .btn-submit {
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #d7c907;
+}
