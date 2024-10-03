@@ -189,6 +189,9 @@
   height: 1655px;
   border-radius: 6px;
   background-image: url("../image/col-3-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-banner .row .col-3 .overlay {
