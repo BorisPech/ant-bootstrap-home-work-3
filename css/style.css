@@ -18,13 +18,18 @@
   background-color: #dcdcdc;
 }
 
-.header .head-logo, .head-social-media {
+.header .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .row .head-logo, .head-social-media {
   height: 120px;
   display: flex;
   align-items: center;
 }
 
-.header .head-logo h1 {
+.header .row .head-logo h1 {
   font-size: 45px;
   font-weight: 400;
   text-transform: uppercase;
@@ -35,25 +40,20 @@
   -webkit-background-clip: text;
 }
 
-.header .head-title h2 {
+.header .row .head-title h2 {
   font-size: 40px;
   font-weight: 400;
   color: #014291;
   margin: 30px 0;
 }
 
-.header .d-flex-js-co-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header .head-social-media .social {
+.header .row .head-social-media .social {
   list-style-type: none;
   display: flex;
   gap: 6px;
 }
 
-.header .head-social-media .social .social-item .social-link img {
+.header .row .head-social-media .social .social-item .social-link img {
   width: 30px;
   height: 30px;
 }
@@ -74,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 .navbar .nav-navbar .nav-item, .dropdown-item {
@@ -97,8 +97,8 @@
 .dropdown {
   z-index: 9999;
   position: absolute;
-  left: -75px;
-  top: 38px;
+  left: -80px;
+  top: 40px;
   width: 180px;
   padding-bottom: 10px;
   border-radius: 6px;
@@ -186,7 +186,6 @@
 
 .hero-banner .row .col-3 {
   width: 300px;
-  height: 1655px;
   border-radius: 6px;
   background-image: url("../image/col-3-bg.jpg");
   background-size: cover;
@@ -196,7 +195,7 @@
 
 .hero-banner .row .col-3 .overlay {
   width: 300px;
-  height: 1655px;
+  height: 100%;
   padding: 10px;
   border-radius: 6px;
   overflow: hidden;
@@ -231,6 +230,11 @@
   display: inline-block;
   border-radius: 6px;
   background-color: #6987aca3;
+  transition: 0.3s ease-in-out all;
+}
+
+.hero-banner .row .col-3 .card .type-book .book-list .book-link:hover {
+  background-color: #6987acc3;
 }
 
 .swiper {
@@ -265,10 +269,10 @@
 .hero-banner .row .col-3 .card .contact .contact-list .con-list .con-link {
   width: 100%;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #ffffff;
-  padding: 10px 0;
+  padding: 12px 0;
   border-radius: 6px;
   display: inline-block;
   border: 2px solid #ff000000;
@@ -276,6 +280,7 @@
 }
 
 .hero-banner .row .col-3 .card .contact .contact-list .con-list .con-link:hover {
+  color: #d7c907;
   border-bottom: 2px solid #d7c907;
 }
 
@@ -287,7 +292,7 @@
 .hero-banner .row .col-3 .card .login {
   background-color: #6987aca3;
   border-radius: 6px;
-  padding: 10px;
+  padding: 10px 10px 22px 10px;
 }
 
 .hero-banner .row .col-3 .card .login .title h1 {
@@ -307,14 +312,15 @@
 .hero-banner .row .col-3 .card .login .form label {
   font-size: 18px;
   font-weight: 500;
+  color: #ffdcdc;
 }
 
 .hero-banner .row .col-3 .card .login .form input {
   width: 260px;
   font-size: 14px;
   font-weight: 400;
-  padding: 8px 0 8px 10px;
-  margin-top: 6px;
+  padding: 10px 0 10px 10px;
+  margin-top: 8px;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -328,14 +334,25 @@
   margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
+  color: #171717;
   background-color: #d7c907;
+}
+
+.hero-banner .row .col-3 .card .login .btn-login input:hover {
+  background-color: #ecdd10;
 }
 
 .hero-banner .row .col-9 {
   width: 850px;
 }
 
-.hero-banner .row .col-9 .title h1 {
+.hero-banner .row .col-9 .title-khmer h1 {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.hero-banner .row .col-9 .title-english h1 {
   font-size: 24px;
   font-weight: 400;
   padding: 20px 0;
@@ -391,16 +408,16 @@
   transition: 0.3s ease-in-out all;
 }
 
-.hero-banner .row .col-9 .row .col .card  .other-btn .btn-item {
+.hero-banner .row .col-9 .row .col .card .other-btn .btn-item {
   margin: 12px 0;
 }
 
-.hero-banner .row .col-9 .row .col .card  .other-btn .btn-item .btn-link {
+.hero-banner .row .col-9 .row .col .card .other-btn .btn-item .btn-link {
   font-size: 25px;
   color: #ffffff;
 }
 
-.hero-banner .row .col-9 .row .col .card  .about {
+.hero-banner .row .col-9 .row .col .card .about {
   z-index: 99;
   position: absolute;
   bottom: -58px;
@@ -459,7 +476,7 @@
   color: #808080;
 }
 
-.padd-right {
+.padding-right {
   padding-right: 30px;
 }
 
@@ -473,6 +490,11 @@
 .footer .row .col-4 .contact .con-list .con-link {
   font-size: 30px;
   color: #ffffff;
+  transition: 0.3s ease-in-out all;
+}
+
+.footer .row .col-4 .contact .con-list .con-link:hover {
+  color: #d7c907;
 }
 
 .footer .row .col-2 {
@@ -491,6 +513,11 @@
   color: #808080;
   display: inline-block;
   padding-bottom: 8px;
+  transition: 0.3s ease-in-out all;
+}
+
+.footer .row .col-2 .other-link .list .oth-link:hover {
+  color: #d7c907;
 }
 
 .footer .row .col-4 .form .input {
@@ -511,6 +538,10 @@
   border-radius: 6px;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: #2b2a2a;
   background-color: #d7c907;
+}
+
+.footer .row .col-4 .btn-submit:hover {
+  background-color: #ecdd10;
 }
